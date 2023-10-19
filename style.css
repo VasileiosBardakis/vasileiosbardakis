@@ -71,6 +71,26 @@ html{
     margin:auto
 }
 
+.header {
+    position: static;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)),url(wallpaper1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.section-2 {
+    position: static;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(220,236,56,1),rgba(256,236,156,0)),url(wallpaper2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
 
 /*
 #mobile-menu{
@@ -89,53 +109,74 @@ html{
     width:25px;
     height:3px;
     margin: 5px auto;
-    transition: all0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background: var(--white);
 }
-/*
+
+
+
 @media screen and (max-width: 768px){
     .nav-container{
         position: relative;
     }
 
-    .nav-menu{
-        display: grid;
-        grid-template-columns: auto;
-        
-        margin:0;
-        width:100%;
-        position:absolute;
-        top :80px;
-        left: -100%;
-        opacity:0;
-        transition: all 0.5s ease;
+    .header{
+        background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)),url(wallpaper1_phone.jpg);
     }
 
-    .nav-menu.active{
-        background: var(--darkgray);
-        left:0;
-        opacite: 1;
+    .section-2 {
+        background-image: linear-gradient(rgba(220,236,56,1),rgba(256,236,156,0)),url(wallpaper4.jpg);
+    }
+
+    body {
+        padding-top:0px;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 500px;
+        display: grid;
+        grid-template-columns: 1.2fr auto 1fr;
+        align-items: center;
+        height: 200px;
+        width: 16%;
+        
+    }
+
+    .nav-menu{
+        position:inherit;
+        display: grid;
+        grid-template-columns: auto;
+        margin:0;
+
+        width:10%;
+        top :2px;
+        left:50%;
         transition: all 0.5s ease;
+    }
+    .nav-links-bio {
+        background: var(--lightred);
+    }
+    .nav-links-con {
+        background: var(--lightred);
     }
 
     .nav-links{
+       
         text-align: center;
         line-height: 60px;
         width:100%;
         display:table;
     }
 
-}*/
+    .bio1{
+        font-size:14px;
+    }
 
-.header{
-    position:static;
-    min-height:100vh;
-    width: 100%;
-    background-image:linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)),url(wallpaper.jpg);
-    background-position:center;
-    background-size:cover;
-    
+   
+
 }
+
 
 
 .bio1{
@@ -148,15 +189,6 @@ html{
     
 }
 
-.section-2{
-    position:static;
-    min-height:100vh;
-    width: 100%;
-    background-image:linear-gradient(rgba(220,236,56,1),rgba(256,236,156,0)),url(wallpaper2.jpg);
-    background-position:center;
-    background-size:cover;
-    
-}
 
 .contact1{
     position:relative;
