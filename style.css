@@ -134,12 +134,12 @@ html{
     .navbar {
         position: fixed;
         top: 0;
-        left: 500px;
+        left: 310px;
         display: grid;
         grid-template-columns: 1.2fr auto 1fr;
         align-items: center;
         height: 200px;
-        width: 16%;
+        width:22%;
         
     }
 
@@ -151,7 +151,7 @@ html{
 
         width:10%;
         top :2px;
-        left:50%;
+        left:30%;
         transition: all 0.5s ease;
     }
     .nav-links-bio {
@@ -169,8 +169,8 @@ html{
         display:table;
     }
 
-    .bio1{
-        font-size:14px;
+    .bio1 {
+        font-size: 11px;
     }
 
    
