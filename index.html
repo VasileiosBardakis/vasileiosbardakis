@@ -22,11 +22,12 @@
                <span class="bar"></span>
                <span class="bar"></span>
             </div>
-                <ul class="nav-menu">
-                    <li><a href="#" class="nav-links nav-links-bio">Biography</a></li>
-                    <li><a href="index.html#section-2" class="nav-links nav-links-con">Contact</a></li>
-                    <li><a href="indexGreek.html#" class="nav-links nav-links-greek">Ελληνικά</a></li>
-                    </ul>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-links nav-links-bio">Biography</a></li>
+                <li><a href="index.html#projects-section" class="nav-links nav-links-pro">Projects</a></li>
+                <li><a href="index.html#section-2" class="nav-links nav-links-con">Contacts</a></li>
+                <li><a href="indexGreek.html#" class="nav-links nav-links-greek">Ελληνικά</a></li>
+            </ul>
         </nav>
         
     <script src="app.js"></script>
@@ -35,63 +36,193 @@
 
 
             <p style="text-align:center;">
-            <b><font size="+2">Biography<br></br></font></b></p>
-             <big>Vasilis Bardakis is a fifth-year undergraduate student at the Department of Computer Engineering and Informatics (CEID)
-                 with a GPA greater than 7.4.
-                  He has excelled in software-related courses due to his early interest in programming from a young age. 
-                  He has demonstrated his teamwork and strong interpersonal skills through university projects and team sports. 
-                  Additionally, he worked for one year (2023-2024) as a programmer in a funded university research project titled 3DSustainAvio, utilizing Unity and VR, providing schools
-                  with a Virtual Reality experience.
-                His thesis is about developing dynamic ecosystems in Unity, which will be completed in April of 2024.
-                He is fluent in English. He has also worked in an auto repair shop and engaged
-                 in various woodworking projects, which have given him self-confidence, enthusiasm,
-                  and a strong desire to thoroughly understand any subject he engages with.
-                  He has a deep understanding of programming languages such as C, C++, C#, Java, Python, SQL, HTML, CSS, NextJS and JavaScript.</small>
-            <!-- Add this new image container after the biography paragraph -->
-<div class="project-images" style="
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 20px;
-margin: 30px 0;
-padding: 0 20px;
-">
-<img src="susavio1.jpg" alt="SustainAvio Project Image 1" style="
-    max-width: 45%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-">
-<img src="susavio2.jpg" alt="SustainAvio Project Image 2" style="
-    max-width: 45%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-">
-</div>
-
-<p style="text-align:center;">
-<b><font size="+2"><br></br>Links<br></br></font></b></p>
-
+            <b><font size="+3">Biography<br></br></font></b></p>
+             <big>Vasilis Bardakis is a fifth-year undergraduate student at the Department of Computer Engineering and Informatics (CEID) with a strong academic record, maintaining a GPA above 7.4. His passion for programming, which began at a young age, has led to excellence in software development courses and practical applications.<br><br>
+                Currently, he is completing his thesis on developing dynamic ecosystems in Unity, scheduled for April 2024. His recent professional experience includes a year-long role (2023-2024) as a programmer in the funded university research project "3DSustainAvio," where he utilized Unity and VR technology to create immersive educational experiences for schools.<br>
+                His technical expertise spans multiple programming languages and frameworks, including C, C++, C#, Java, Python, SQL, HTML, CSS, NextJS, and JavaScript. Beyond his academic and professional work, his experience in an auto repair shop and various woodworking projects has cultivated practical problem-solving skills and a hands-on approach to learning.<br>
+                Fluent in English, Vasilis combines strong technical capabilities with excellent interpersonal skills, demonstrated through successful team collaborations in both university projects and team sports. His diverse background has fostered a self-confident, enthusiastic approach and an inherent drive to deeply understand and master new challenges. </div>
+    </section>
+                <section class="projects-section-background"  id="projects-section">
+                    <section class="projects-section">
             <p style="text-align:center;">
-            <b><font size="+2"><br></br>Links<br></br></font></b></p>
-            <a href="https://github.com/VasileiosBardakis" target=_self title="https://github.com/VasileiosBardakis">
-                <big>   
-                Github
-                </big>
-                </a><p>
-                <a href="https://play.unity.com/u/vbardakis" target=_self title="https://play.unity.com/u/vbardakis">
-                <big>   
-                Unity Play
-                </big>
-                </a>
-                <p>
-                    <a href="https://www.linkedin.com/in/vasilis-bardakis-003560294/" target=_self title="https://www.linkedin.com/in/vasilis-bardakis-003560294/">
-                    <big>   
-                    LinkedIn
-                    </big>
-                    </a>
+        <b><font size="+3"><br><br>Projects<br></br></font></b></p>
+
+                  <section class="project-section" style="
+                  padding: 40px 20px;
+                  background-color: rgba(1, 0, 0, 0.1); /* Slightly darker than main background */
+                  position: relative;
+                  margin-top: 10px; /* Push it down */
+                  margin-left: auto; /* Push it right */
+                  margin-right: auto; /* Keep some space from the right edge */
+                  max-width: 900px;
+                  border-radius: 12px; /* Rounded corners */
+              ">
+                  <div style="max-width: 1200px; margin: 0 auto;">
+                      <h2 style="text-align: center; margin-bottom: 30px; font-size: 1.5em;">
+                          <b>3DSustainAvio</b>
+                      </h2>
+                      <p style="text-align: center; margin-bottom: 30px;">
+                          Images from the 3DSustainAvio workshop, where Virtual Reality technology was used to provide 
+                          an immersive educational experience for schools.
+                      </p>
+                      <div class="project-images" style="
+                          display: flex;
+                          flex-wrap: wrap;
+                          justify-content: center;
+                          gap: 20px;
+                          margin: 20px 0;
+                      ">
+                          <figure style="
+                              margin: 0;
+                              flex-basis: 45%;
+                              max-width: 500px;
+                          ">
+                              <img src="susavio1.jpg" alt="3DSustainAvio Workshop - Scene 1" style="
+                                  width: 100%;
+                                  height: auto;
+                                  border-radius: 8px;
+                                  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                              ">
+                              <figcaption style="
+                                  text-align: center;
+                                  margin-top: 10px;
+                                  color: #666;
+                              ">Students engaging with VR technology</figcaption>
+                          </figure>
+                          <figure style="
+                              margin: 0;
+                              flex-basis: 45%;
+                              max-width: 500px;
+                          ">
+                              <img src="susavio2.jpg" alt="3DSustainAvio Workshop - Scene 2" style="
+                                  width: 100%;
+                                  height: auto;
+                                  border-radius: 8px;
+                                  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                              ">
+                              <figcaption style="
+                                  text-align: center;
+                                  margin-top: 10px;
+                                  color: #666;
+                              ">Unity enviroment demonstration</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+              </section>
+
+
+
+
+<section class="project-section" style="
+     padding: 40px 20px;
+     background-color: rgba(1, 0, 0, 0.1); /* Slightly darker than main background */
+                  position: relative;
+                  margin-top: 100px; /* Push it down */
+                  margin-left: auto; /* Push it right */
+                  margin-right: auto; /* Keep some space from the right edge */
+                  max-width: 900px;
+                  border-radius: 12px; /* Rounded corners */
+">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <h2 style="text-align: center; margin-bottom: 30px; font-size: 1.5em;">
+            <b>Dynamic Ecosystems in Unity</b>
+        </h2>
+        <p style="text-align: center; margin-bottom: 30px;">
+            Thesis project focused on developing dynamic ecosystems within Unity, exploring advanced 
+            simulation techniques and environmental interactions. Expected completion: April 2024.
+        </p>
+        <div class="project-images" style="
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        ">
+            <figure style="
+                margin: 0;
+                max-width: 700px; /* Larger since it's a single image */
+                width: 90%;
+            ">
+                <img src="thesis.png" alt="Dynamic Ecosystem Thesis Project" style="
+                    width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                ">
+                <figcaption style="
+                    text-align: center;
+                    margin-top: 10px;
+                    color: #666;
+                ">Visualization of the dynamic ecosystem simulation in Unity</figcaption>
+            </figure>
         </div>
+    </div>
+</section>
+
+
+
+<section class="project-section" style="
+     padding: 40px 20px;
+     background-color: rgba(1, 0, 0, 0.1); /* Slightly darker than main background */
+                  position: relative;
+                  margin-top: 100px; /* Push it down */
+                  margin-left: auto; /* Push it right */
+                  margin-right: auto; /* Keep some space from the right edge */
+                  max-width: 1400px;
+                  border-radius: 12px; /* Rounded corners */
+">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <h2 style="text-align: center; margin-bottom: 30px; font-size: 1.5em;">
+            <b>Makeup Mayhem E-Shop</b>
+        </h2>
+        <p style="text-align: center; margin-bottom: 30px;">
+            A fully functional e-commerce platform for cosmetics, featuring complete shopping functionality,
+            user authentication, and product management.
+        </p>
+        <div class="project-images" style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        ">
+            <figure style="
+                margin: 0;
+                flex-basis: 45%;
+                max-width: 500px;
+            ">
+                <img src="makeupMayhem1.jpg" alt="Makeup Mayhem E-Shop - Homepage" style="
+                    width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                ">
+                <figcaption style="
+                    text-align: center;
+                    margin-top: 10px;
+                    color: #666;
+                ">Homepage showcasing featured products and navigation</figcaption>
+            </figure>
+            <figure style="
+                margin: 0;
+                flex-basis: 45%;
+                max-width: 500px;
+            ">
+                <img src="makeupMayhem10.jpg" alt="Makeup Mayhem E-Shop - Product View" style="
+                    width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                ">
+                <figcaption style="
+                    text-align: center;
+                    margin-top: 10px;
+                    color: #666;
+                ">Checkouts</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+</section>
+
     </section>
 
     <section class="section-2" id="section-2">
@@ -105,9 +236,27 @@ padding: 0 20px;
             <p><b>Personal e-mail</b>:  basilhsbar5@gmail.com</p>
             <p><b>University upnet e-mail</b>:  up1088098@ac.upatras.gr</p>
             <p><b>CEID webmail</b>:  st1088098@ceid.upatras.gr</p>
+
+
+            <p style="text-align:center;">
+            <b><font size="+2">Links<br></br></font></b></p>
+            <a href="https://github.com/VasileiosBardakis" target=_self title="https://github.com/VasileiosBardakis">
+                <big>   
+                Github
+                </big>
+                </a><p>
                 
+                <p>
+                    <a href="https://www.linkedin.com/in/vasilis-bardakis-003560294/" target=_self title="https://www.linkedin.com/in/vasilis-bardakis-003560294/">
+                    <big>   
+                    LinkedIn
+                    </big>
+                    </a>
+
             
         </div>
+
+
             
         </div>
     </section>
