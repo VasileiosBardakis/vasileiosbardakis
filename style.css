@@ -113,6 +113,19 @@ html{
 }
 
 
+.projects-section-background{
+    background-image: linear-gradient(rgb(218, 237, 10),rgba(256,236,156,0)),url(wallpaper5.jpg);
+  
+}
+
+.projects-section{
+    position:relative;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 50%;
+
+}
+
 
 @media screen and (max-width: 768px){
     .nav-container{
@@ -140,6 +153,14 @@ html{
         font-size: 11px;
     }
 
+    .projects-section{
+        position:relative;
+        transform:
+        left:-50%;
+        width:100%;
+    
+    }
+
    
 
 }
@@ -154,19 +175,6 @@ html{
     width: 50%;
     
     
-}
-
-.projects-section-background{
-    background-image: linear-gradient(rgb(218, 237, 10),rgba(256,236,156,0)),url(wallpaper5.jpg);
-  
-}
-
-.projects-section{
-    position:relative;
-    transform: translateX(-50%);
-    left: 50%;
-    width: 50%;
-
 }
 
 
