@@ -3,10 +3,10 @@ const menuLinks = document.querySelector('.nav-menu');
 const navbar = document.querySelector(".nav-links-bio");
 const navbar2 = document.querySelector(".nav-links-con");
 const navbar3 = document.querySelector(".nav-links-pro");
+let lastScrollY = window.scrollY;
 
 navbar.classList.add("nav-links-bio");
 window.addEventListener("scroll", () => {
-	console.log("scrollY", window.scrollY);
 	if (window.scrollY > 869 && window.scrollY < 2469) {
 		
 		navbar.classList.remove("nav-links-bio");
