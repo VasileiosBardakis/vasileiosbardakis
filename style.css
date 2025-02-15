@@ -139,7 +139,7 @@ html{
     }
     .header{
         background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)),url(wallpaper1_phone.jpg);
-        min-height: 290vh;
+        min-height: 170vh;
     }
 
     .section-2 {
