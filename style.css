@@ -83,7 +83,7 @@ html{
 
 .header {
     position: static;
-    min-height: 100vh;
+    min-height: 120vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)),url(wallpaper1.jpg);
     background-position: center;
@@ -139,6 +139,7 @@ html{
     }
     .header{
         background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)),url(wallpaper1_phone.jpg);
+        min-height: 290vh;
     }
 
     .section-2 {
