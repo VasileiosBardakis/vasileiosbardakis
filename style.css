@@ -363,6 +363,7 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     color: var(--primary);
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
+    min-height: 3.2rem; /* ensure equal spacing even if title wraps */
 }
 
 .skill-list {
@@ -449,14 +450,17 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     top: 20px;
     border-radius: 50%;
     z-index: 1;
+    left: auto;             /* reset */
+    right: auto;
+    transform: none;
 }
 
 .timeline-item.left::after {
-    right: -10px;
+    right: -14px;           /* half of dot width (28px) */
 }
 
 .timeline-item.right::after {
-    left: -10px;
+    left: -14px;            /* half of dot width */
 }
 
 .timeline-content {
@@ -513,7 +517,7 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 }
 
 .project-header {
-    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    background: linear-gradient(135deg, #193e9c 0%, #06173f 100%);
     color: var(--white);
     padding: 2rem;
     position: relative;
@@ -565,8 +569,8 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 }
 
 .project-images figure:hover {
-    transform: scale(1.02);
-    box-shadow: var(--shadow-lg);
+    transform: none !important;
+    box-shadow: var(--shadow-md); /* keep consistent shadow */
 }
 
 .project-images img {
@@ -574,10 +578,19 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     height: auto;
     display: block;
     transition: var(--transition);
+    aspect-ratio: 4 / 3; /* reserve space before image loads */
+    object-fit: cover;  /* maintain cropping */
+}
+
+.project-images img[src$=".png"] {
+    object-fit: contain;          /* show full PNG inside reserved box */
+    aspect-ratio: auto;           /* let image define its own ratio to avoid blank gaps */
+    height: auto;                 /* allow natural height */
+    max-height: 600px;            /* cap height for consistency */
 }
 
 .project-images figure:hover img {
-    transform: scale(1.05);
+    transform: none !important;
 }
 
 .project-tech {
@@ -614,6 +627,20 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     height: 200%;
     background: radial-gradient(circle, rgba(100,255,218,0.1) 0%, transparent 70%);
     animation: rotate 20s linear infinite;
+}
+
+/* Dotted overlay similar to hero section */
+.contact-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 2px, transparent 2px);
+    background-size: 28px 28px;
+    mix-blend-mode: overlay;
+    pointer-events: none;
 }
 
 .contact-container {
@@ -874,22 +901,27 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
         text-align: center;
     }
 
+    /* Simplified mobile timeline alignment */
     .timeline::after {
-        left: 31px;
+        left: 20px;               /* move line inwards for clarity */
     }
 
     .timeline-item {
         width: 100%;
-        padding-left: 70px;
+        padding-left: 60px;      /* space for dot and line */
         padding-right: 25px;
     }
 
     .timeline-item.right {
-        left: 0%;
+        left: 0; /* ensure full width */
     }
 
-    .timeline-item::after {
-        left: 21px;
+    .timeline-item::after,
+    .timeline-item.left::after,
+    .timeline-item.right::after {
+        left: 20px;               /* align to new line position */
+        right: auto;
+        transform: translateX(-50%); /* center dot on line */
     }
 
     .skills-grid {
