@@ -1,264 +1,430 @@
 <!DOCTYPE html>
-<html>
-    <head>
-     <link rel="icon" href="ceid.ico" type="image/x-icon"/>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
-        <title>Vasilis Bardakis</title>
-        <link rel="stylesheet" href="style.css">
-        <style>
-        
-        </style>
-    </head>
-    <body>
-        
-        <nav class="navbar">
-            <!--<h1 id="navbar-logo">LUXCO</h1>  se periptwsh pou thelw na valw kapoio logo-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vasilis Bardakis - Computer Engineering Student & Software Developer specializing in Unity, VR, and Web Development">
+    <meta name="keywords" content="Vasilis Bardakis, Computer Engineering, Unity Developer, VR Development, Software Engineer">
+    <meta name="author" content="Vasilis Bardakis">
+    
+    <link rel="icon" href="ceid.ico" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <title>Vasilis Bardakis - CV & Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">VB</a>
             <div class="menu-toggle" id="mobile-menu">
-               <span class="bar"></span>
-               <span class="bar"></span>
-               <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#" class="nav-links nav-links-bio">Biography</a></li>
-                <li><a href="index.html#projects-section" class="nav-links nav-links-pro">Projects</a></li>
-                <li><a href="index.html#section-2" class="nav-links nav-links-con">Contacts</a></li>
-                <li><a href="indexGreek.html#" class="nav-links nav-links-greek">Ελληνικά</a></li>
+                <li><a href="#about" class="nav-links">About</a></li>
+                <li><a href="#skills" class="nav-links">Skills</a></li>
+                <li><a href="#experience" class="nav-links">Experience</a></li>
+                <li><a href="#projects" class="nav-links">Projects</a></li>
+                <li><a href="#contact" class="nav-links">Contact</a></li>
+                <li><a href="indexGreek.html" class="nav-links nav-links-greek">ΕΛ</a></li>
             </ul>
-        </nav>
-        
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="header" id="home">
+        <div class="orbs">
+            <span class="orb orb1"></span>
+            <span class="orb orb2"></span>
+            <span class="orb orb3"></span>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Vasilis Bardakis</h1>
+            <p class="hero-subtitle">Computer Engineering Graduate & Full-Stack Developer</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="bio-section" id="about">
+        <div class="bio-container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="bio-grid">
+                <div class="bio-image">
+                    <img src="me.jpg" alt="Vasilis Bardakis" loading="lazy">
+                </div>
+                <div class="bio-text">
+                    <p>
+                        Hello! I'm a recent graduate (July 2025) of the Department of Computer Engineering and 
+                        Informatics (CEID) with a strong academic record (GPA 7.65). My passion for 
+                        programming began at a young age and has driven me to excel in software development.
+                    </p>
+                    <p>
+                        I recently completed my thesis on developing dynamic ecosystems in Unity (April 2025). I also 
+                        worked as a programmer in the funded university research project "3DSustainAvio" (2023-2024), 
+                        where I utilized Unity and VR technology to create immersive educational experiences.
+                    </p>
+                    <p>
+                        I currently work remotely as an <strong>independent contractor for StudyFetch</strong>, building 
+                        full-stack educational technology features. Beyond coding, my experience in an auto repair shop 
+                        and various woodworking projects has cultivated practical problem-solving skills and a hands-on 
+                        approach to learning.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-name">C/C++</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">C#</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Technologies & Frameworks</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-name">Unity 3D</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">VR Development</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Next.js/React</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">SQL Databases</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-name">Team Collaboration</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Problem Solving</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">English (Fluent)</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Self-Learning</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-name">Project Management</span>
+                            <div class="skill-level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Timeline -->
+    <section class="timeline-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education & Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3 class="timeline-date">2020 - 2025</h3>
+                        <h4 class="timeline-title">Computer Engineering & Informatics</h4>
+                        <p class="timeline-description">University of Patras, CEID<br>Bachelor's Degree awarded July 2025 (GPA 7.65/10)</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3 class="timeline-date">2023 - 2024</h3>
+                        <h4 class="timeline-title">VR/Unity Developer</h4>
+                        <p class="timeline-description">3DSustainAvio Research Project<br>Developed educational VR experiences for schools</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3 class="timeline-date">2024 - 2025</h3>
+                        <h4 class="timeline-title">Thesis Project</h4>
+                        <p class="timeline-description">Dynamic Ecosystems in Unity<br>Advanced simulation and environmental interactions</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3 class="timeline-date">2025 - Present</h3>
+                        <h4 class="timeline-title">Independent Contractor</h4>
+                        <p class="timeline-description">StudyFetch (Remote)<br>Building educational technology solutions and contributing to full-stack features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section-background" id="projects">
+        <div class="projects-container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <!-- 3DSustainAvio Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>3DSustainAvio</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        A funded university research project where I worked as a programmer for one year. 
+                        Developed immersive VR educational experiences focusing on sustainability and aviation.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Unity 3D</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">VR/AR</span>
+                        <span class="tech-tag">Oculus</span>
+                    </div>
+                    <div class="project-images">
+                        <figure>
+                            <img src="susavio1.jpg" alt="VR Experience Demo" loading="lazy">
+                        </figure>
+                        <figure>
+                            <img src="susavio2.jpg" alt="Unity Environment" loading="lazy">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thesis Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Dynamic Ecosystems Simulation</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        My thesis project focusing on creating realistic ecosystem simulations with complex 
+                        agent behaviors, environmental interactions, and real-time adaptation mechanisms.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Unity 3D</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">AI/ML</span>
+                        <span class="tech-tag">Procedural Generation</span>
+                    </div>
+                    <div class="project-images">
+                        <figure>
+                            <img src="thesis.png" alt="Ecosystem Simulation" loading="lazy">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-Shop Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Makeup Mayhem E-Commerce</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        E-commerce platform with user authentication, product management, 
+                        shopping cart functionality, and secure payment processing.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Javascript</span>
+                        <span class="tech-tag">Wordpresst</span>
+                    <div class="project-images">
+                        <figure>
+                            <img src="makeupMayhem1.jpg" alt="E-Shop Homepage" loading="lazy">
+                        </figure>
+                        <figure>
+                            <img src="makeupMayhem10.jpg" alt="Checkout Process" loading="lazy">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p>I'm always interested in new opportunities and collaborations</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h4>PersonalEmail</h4>
+                    <a href="mailto:basilhsbar5@gmail.com">basilhsbar5@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🎓</div>
+                    <h4>University Email</h4>
+                    <a href="mailto:up1088098@ac.upatras.gr">up1088098@ac.upatras.gr</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h4>Location</h4>
+                    <p>Patras, Greece</p>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/VasileiosBardakis" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/vasilis-bardakis-003560294/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <script src="app.js"></script>
-    <section class="header">
-        <div class="bio1" id="bio1">
-
-
-            <p style="text-align:center;">
-            <b><font size="+3">Biography<br></br></font></b></p>
-             <big>Vasilis Bardakis is a fifth-year undergraduate student at the Department of Computer Engineering and Informatics (CEID) with a strong academic record, maintaining a GPA above 7.4. His passion for programming, which began at a young age, has led to excellence in software development courses and practical applications.<br><br>
-                Currently, he is completing his thesis on developing dynamic ecosystems in Unity, scheduled for April 2025. His recent professional experience includes a year-long role (2023-2024) as a programmer in the funded university research project "3DSustainAvio," where he utilized Unity and VR technology to create immersive educational experiences for schools.<br>
-                His technical expertise spans multiple programming languages and frameworks, including C, C++, C#, Java, Python, SQL, HTML, CSS, NextJS, and JavaScript. Beyond his academic and professional work, his experience in an auto repair shop and various woodworking projects has cultivated practical problem-solving skills and a hands-on approach to learning.<br>
-                Fluent in English, Vasilis combines strong technical capabilities with excellent interpersonal skills, demonstrated through successful team collaborations in both university projects and team sports. His diverse background has fostered a self-confident, enthusiastic approach and an inherent drive to deeply understand and master new challenges. </div>
-    </section>
-                <section class="projects-section-background"  id="projects-section">
-                    <section class="projects-section">
-            <p style="text-align:center;">
-        <b><font size="+3"><br><br>Projects<br></br></font></b></p>
-
-                  <section class="project-section" style="
-                  padding: 40px 20px;
-                  background-color: rgba(1, 0, 0, 0.1); /* Slightly darker than main background */
-                  position: relative;
-                  margin-top: 10px; /* Push it down */
-                  margin-left: auto; /* Push it right */
-                  margin-right: auto; /* Keep some space from the right edge */
-                  max-width: 900px;
-                  border-radius: 12px; /* Rounded corners */
-              ">
-                  <div style="max-width: 1200px; margin: 0 auto;">
-                      <h2 style="text-align: center; margin-bottom: 30px; font-size: 1.5em;">
-                          <b>3DSustainAvio</b>
-                      </h2>
-                      <p style="text-align: center; margin-bottom: 30px;">
-                          Images from the 3DSustainAvio workshop, where Virtual Reality technology was used to provide 
-                          an immersive educational experience for schools.
-                      </p>
-                      <div class="project-images" style="
-                          display: flex;
-                          flex-wrap: wrap;
-                          justify-content: center;
-                          gap: 20px;
-                          margin: 20px 0;
-                      ">
-                          <figure style="
-                              margin: 0;
-                              flex-basis: 45%;
-                              max-width: 500px;
-                          ">
-                              <img src="susavio1.jpg" alt="3DSustainAvio Workshop - Scene 1" style="
-                                  width: 100%;
-                                  height: auto;
-                                  border-radius: 8px;
-                                  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                              ">
-                              <figcaption style="
-                                  text-align: center;
-                                  margin-top: 10px;
-                                  color: #666;
-                              ">Students engaging with VR technology</figcaption>
-                          </figure>
-                          <figure style="
-                              margin: 0;
-                              flex-basis: 45%;
-                              max-width: 500px;
-                          ">
-                              <img src="susavio2.jpg" alt="3DSustainAvio Workshop - Scene 2" style="
-                                  width: 100%;
-                                  height: auto;
-                                  border-radius: 8px;
-                                  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                              ">
-                              <figcaption style="
-                                  text-align: center;
-                                  margin-top: 10px;
-                                  color: #666;
-                              ">Unity enviroment demonstration</figcaption>
-                          </figure>
-                      </div>
-                  </div>
-              </section>
-
-
-
-
-<section class="project-section" style="
-     padding: 40px 20px;
-     background-color: rgba(1, 0, 0, 0.1); /* Slightly darker than main background */
-                  position: relative;
-                  margin-top: 100px; /* Push it down */
-                  margin-left: auto; /* Push it right */
-                  margin-right: auto; /* Keep some space from the right edge */
-                  max-width: 900px;
-                  border-radius: 12px; /* Rounded corners */
-">
-    <div style="max-width: 1200px; margin: 0 auto;">
-        <h2 style="text-align: center; margin-bottom: 30px; font-size: 1.5em;">
-            <b>Dynamic Ecosystems in Unity</b>
-        </h2>
-        <p style="text-align: center; margin-bottom: 30px;">
-            Thesis project focused on developing dynamic ecosystems within Unity, exploring advanced 
-            simulation techniques and environmental interactions. Expected completion: April 2025.
-        </p>
-        <div class="project-images" style="
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        ">
-            <figure style="
-                margin: 0;
-                max-width: 700px; /* Larger since it's a single image */
-                width: 90%;
-            ">
-                <img src="thesis.png" alt="Dynamic Ecosystem Thesis Project" style="
-                    width: 100%;
-                    height: auto;
-                    border-radius: 8px;
-                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                ">
-                <figcaption style="
-                    text-align: center;
-                    margin-top: 10px;
-                    color: #666;
-                ">Visualization of the dynamic ecosystem simulation in Unity</figcaption>
-            </figure>
-        </div>
-    </div>
-</section>
-
-
-
-<section class="project-section" style="
-     padding: 40px 20px;
-     background-color: rgba(1, 0, 0, 0.1); /* Slightly darker than main background */
-                  position: relative;
-                  margin-top: 100px; /* Push it down */
-                  margin-left: auto; /* Push it right */
-                  margin-right: auto; /* Keep some space from the right edge */
-                  max-width: 1400px;
-                  border-radius: 12px; /* Rounded corners */
-">
-    <div style="max-width: 1200px; margin: 0 auto;">
-        <h2 style="text-align: center; margin-bottom: 30px; font-size: 1.5em;">
-            <b>Makeup Mayhem E-Shop</b>
-        </h2>
-        <p style="text-align: center; margin-bottom: 30px;">
-            A fully functional e-commerce platform for cosmetics, featuring complete shopping functionality,
-            user authentication, and product management.
-        </p>
-        <div class="project-images" style="
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
-        ">
-            <figure style="
-                margin: 0;
-                flex-basis: 45%;
-                max-width: 500px;
-            ">
-                <img src="makeupMayhem1.jpg" alt="Makeup Mayhem E-Shop - Homepage" style="
-                    width: 100%;
-                    height: auto;
-                    border-radius: 8px;
-                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                ">
-                <figcaption style="
-                    text-align: center;
-                    margin-top: 10px;
-                    color: #666;
-                ">Homepage showcasing featured products and navigation</figcaption>
-            </figure>
-            <figure style="
-                margin: 0;
-                flex-basis: 45%;
-                max-width: 500px;
-            ">
-                <img src="makeupMayhem10.jpg" alt="Makeup Mayhem E-Shop - Product View" style="
-                    width: 100%;
-                    height: auto;
-                    border-radius: 8px;
-                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                ">
-                <figcaption style="
-                    text-align: center;
-                    margin-top: 10px;
-                    color: #666;
-                ">Checkout Page</figcaption>
-            </figure>
-        </div>
-    </div>
-</section>
-</section>
-
-    </section>
-
-    <section class="section-2" id="section-2">
-    
-        <div class="contact1" id="contact1">
-
-
-            <p style="text-align:center;">
-            <b><font size="+2">Contact Information<br></br></font></b></p>
-        
-            <p><b>Personal e-mail</b>:  basilhsbar5@gmail.com</p>
-            <p><b>University upnet e-mail</b>:  up1088098@ac.upatras.gr</p>
-            <p><b>CEID webmail</b>:  st1088098@ceid.upatras.gr</p>
-
-
-            <p style="text-align:center;">
-            <b><font size="+2">Links<br></br></font></b></p>
-            <a href="https://github.com/VasileiosBardakis" target=_self title="https://github.com/VasileiosBardakis">
-                <big>   
-                Github
-                </big>
-                </a><p>
-                
-                <p>
-                    <a href="https://www.linkedin.com/in/vasilis-bardakis-003560294/" target=_self title="https://www.linkedin.com/in/vasilis-bardakis-003560294/">
-                    <big>   
-                    LinkedIn
-                    </big>
-                    </a>
-
-            
-        </div>
-
-
-            
-        </div>
-    </section>
-    </body>
+</body>
 </html>
