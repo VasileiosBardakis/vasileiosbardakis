@@ -170,7 +170,7 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     display: flex;
     align-items: center;
     /* Modern dark blue gradient */
-    background: linear-gradient(135deg, #0d1b3d 0%, #112f6e 100%);
+    background: linear-gradient(135deg, #193e9c 0%, #06173f 100%);
 }
 
 .header::before {
@@ -598,7 +598,7 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 
 /* Contact Section - Modern Design */
 .contact-section {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    background: linear-gradient(135deg, #193e9c 0%, #06173f 100%);
     color: var(--white);
     padding: var(--section-padding);
     position: relative;
