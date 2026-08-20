@@ -483,6 +483,12 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 
 .timeline-title {
     color: var(--primary);
+    margin-bottom: 0.25rem;
+}
+
+.timeline-company {
+    color: var(--accent);
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
@@ -583,10 +589,9 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 }
 
 .project-images img[src$=".png"] {
-    object-fit: contain;          /* show full PNG inside reserved box */
-    aspect-ratio: auto;           /* let image define its own ratio to avoid blank gaps */
-    height: auto;                 /* allow natural height */
-    max-height: 600px;            /* cap height for consistency */
+    object-fit: cover;            /* crop to fill the box */
+    aspect-ratio: 2 / 1;          /* consistent, less-wide frame */
+    height: auto;
 }
 
 .project-images figure:hover img {
@@ -695,6 +700,10 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     color: var(--white);
     text-decoration: none;
     transition: var(--transition);
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-all;
 }
 
 .contact-card a:hover {
